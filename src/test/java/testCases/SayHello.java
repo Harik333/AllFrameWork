@@ -15,4 +15,11 @@ public class SayHello {
 	 public void Bye() {
 		 System.out.println("Byeee");
 	 }
+	 
+	 @Test
+	 public void userDirectory() {
+		 String userDir = System.getProperty("user.dir");
+		 System.out.println(userDir);
+		 
+	 }
 }
