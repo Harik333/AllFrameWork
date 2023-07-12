@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+	  <groups>
+		  <run>
+			  <include name="English"/>
+		  </run>
+	  </groups>  
+	  <classes>
+		  
+		  <class name="demoTestNG.Scenario01">
+			  <parameter name="CustomGreet" value="Hi Mark, How was ur day?"/>
+		  </class>
+	  </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
