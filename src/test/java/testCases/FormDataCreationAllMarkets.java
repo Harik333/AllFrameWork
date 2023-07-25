@@ -24,7 +24,7 @@ public class FormDataCreationAllMarkets {
 	public void preCondition() {
 		System.getProperty("webdriver.edge.driver", "C:\\Temp\\Drivers\\msedgedriver.exe");
 		EdgeOptions options = new EdgeOptions();
-		options.setAcceptInsecureCerts(true);
+		options.setAcceptInsecureCerts(true);		
 		driver = new EdgeDriver(options);
 		driver.manage().window().maximize();
 		
