@@ -5,6 +5,7 @@ import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -22,7 +23,9 @@ public class FormDataCreationAllMarkets {
 	@BeforeMethod
 	public void preCondition() {
 		System.getProperty("webdriver.edge.driver", "C:\\Temp\\Drivers\\msedgedriver.exe");
-		driver = new EdgeDriver();
+		EdgeOptions options = new EdgeOptions();
+		options.setAcceptInsecureCerts(true);
+		driver = new EdgeDriver(options);
 		driver.manage().window().maximize();
 		
 		try {
@@ -67,8 +70,6 @@ public class FormDataCreationAllMarkets {
 			y=0;
 		}
 		return data;
-	}
-	
-	
+	}	
 	
 }

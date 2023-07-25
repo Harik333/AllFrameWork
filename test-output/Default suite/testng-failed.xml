@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="basicJava.basicsEight">
+      <class name="testCases.parallelTestDemo">
         <methods>
-          <include name="dateTime"/>
+          <include name="parallelLaunchA"/>
         </methods>
-      </class> <!-- basicJava.basicsEight -->
+      </class> <!-- testCases.parallelTestDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
